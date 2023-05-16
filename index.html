@@ -3,11 +3,26 @@
 <head>
   <title>Volunteer Matchmaking Website</title>
   <style>
+    body{
+      width: 100%;
+      border: solid black;
+      /* margin: 15px; */
+      /* background-color: rgb(64, 226, 226); */
+    }
+    table{
+      width: 97%;
+     
+      /* border: solid black; */
+    }
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 20px;
+      padding: 10;
+      margin: 2%;
+      border: solid black;
+      background-color: rgb(148, 237, 237);
     }
 
     .logo {
@@ -15,6 +30,9 @@
       height: 100px;
       flex: 0 0 auto;
       overflow: hidden;
+      height: 50px;
+      width: 70px;
+      padding-right: 33%;
     }
 
     .logo img {
@@ -26,12 +44,14 @@
       display: flex;
       flex: 30%;
     }
-
+    
     .header-links select {
       flex: 1;
       padding: 8px;
       border: none;
       border-radius: 4px;
+      border: solid rgb(0, 0, 0);
+      margin: 2%;
     }
 
     .donate-button,
@@ -59,34 +79,81 @@
       background-color: #333;
       color: #fff;
       text-align: center;
+      margin: 2%;
     }
+
+    .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    
+    .imagess{
+      width: 33%;
+      padding: 2%;
+      padding-right: ;
+      height: 33%;
+      display: flex;
+      box-sizing: border-box;
+    }
+    .imagess img{
+      width: 35%;
+      padding: 4%;
+      margin: 1%;
+      border: 2px solid black;
+      background-color: rgb(135, 222, 213);
+    }
+
   </style>
 </head>
 <body>
   <header>
     <div class="logo">
-      <img src="images/logo.jpeg" alt="Volunteer Matchmaking Logo">
+      <img src="images/logo.jpeg" alt="Volunteer Matchmaking Logo" >
     </div>
     <div class="header-links">
       <select>
-        <option value="">For Volunteers</option>
-        <option value="">Volunteer Option 1</option>
-        <option value="">Volunteer Option 2</option>
+        <option value="" disabled>For Volunteers</option>
+        <option value="">Volunteer </option>
+        <option value="">Volunteer </option>
         <!-- Add more options for volunteers if needed -->
       </select>
       <select>
-        <option value="">For Organizations</option>
-        <option value="">Organization Option 1</option>
-        <option value="">Organization Option 2</option>
+        <option value="" disabled>For Organizations</option>
+        <option value="">Organization </option>
+        <option value="">Organization </option>
         <!-- Add more options for organizations if needed -->
       </select>
     </div>
     <button class="donate-button" onclick="location.href='https://pages.razorpay.com/pl_LqHFmKZ3hNXSk3/view'">Donate</button>
     <button class="login-button" onclick="location.href='login.html'">Login</button>
-    <button class="signup-button">Sign Up</button>
+    <button class="signup-button" onclick="location.href='signup.html' ">Sign Up</button>
   </header>
 
   <!-- Rest of the page content -->
+  <div class="imagess">
+<img src="images/drinkingWater.png" alt="drinking water crisis" style=" width:100%" >
+<img src="images/education.png" alt="childrenEducation" style=" width: 100%">
+<img src="images/hunger.png" alt="hunger" style="width:100%">
+
+</div>
+<!-- 
+<div class="row">
+  <div class="column">
+    <img src="images/drinkingWater.png" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/education.png" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/hunger.png" alt="Mountains" style="width:100%"> -->
 
   <footer>
     <p>© 2023 Volunteer Matchmaking. All rights reserved.</p>
